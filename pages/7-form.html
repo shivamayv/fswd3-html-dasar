@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran SIB</title>
+</head>
+<style>
+.form {
+  margin: 10px auto;
+  width: 400px;
+  padding: 10px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #04AA6D;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+<body>
+  <div class="form">
+    <h2 align="center">Form Pendaftaran SIB 2023</h2>
+
+    <div>
+        <label for="fname">Nama Lengkap:</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Masukkan nama lengkap"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="Masukkan email"><br>
+
+        <label for="nohp">No. Hp:</label><br>
+        <input type="text" id="nohp" name="nomorhp" placeholder="Masukkan No. Hp"><br>
+
+        <label for="gender">Jenis Kelamin:</label><br>
+        <input type="radio" name="gender" value="L"> Laki-Laki <br>
+        <input type="radio" name="gender" value="P"> Perempuan <br><br>
+
+        <label for="univ">Universitas</label><br>
+        <input type="text" id="univ" name="universitas" placeholder="Masukkan nama universitas"><br> 
+        
+        <label for="jurusan">Jurusan</label><br>
+        <select id="jurusan" name="jurusan">
+            <option value="si">Sistem Informasi</option>
+            <option value="it">Teknik Informatika</option>
+            <option value="rpl">Rekayasa Perangkat Lunak</option>
+            <option value="dkv">Desain Komunikasi Visual</option>
+        </select><br>
+
+        <label for="alamat">Alamat</label><br>
+        <textarea id="alamat" name="alamat" placeholder="Masukkan alamat" style="height:100px"></textarea><br>
+
+        <input type="submit" value="Daftar">
+    </div>
+  </div>
+</body>
+</html>

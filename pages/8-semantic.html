@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel Semantic</title>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+header {
+  background-color: #c26111;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* kolom */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* footer */
+footer {
+  background-color: #c26111;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h3>Studi Independen Bersertifikat Full Stack Web Developer Arkatama</h3>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://kampusmerdeka.kemdikbud.go.id/">Kampus Merdeka</a></li>
+                <li><a href="https://arkatama.id/">PT Arkatama Multi Solusindo</a></li>
+                <li><a href="https://sinauo.arkatama.id/">Sinauo Arkatama</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h3>SIB Full Stack Web Developer</h3>
+            <p>Program studi independen bersertifikat Full Stack Web Developer ini bertujuan untuk melatih peserta 
+            menjadi Web Developer yang kompeten dan profesional dibagian front end dan back end. Peserta akan 
+            dibimbing dari dasar untuk mempelajari teknologi HTML, CSS, JavaScript dan juga teknologi back-end 
+            untuk mengembangkan website yang responsif dan berkualitas. Pada akhir program, peserta akan dapat 
+            mengikuti ujian kompetensi sebagai juniorweb developer dan mendapatkan pengakuan kompetensi dari 
+            Badan Nasional Sertifikasi Profesi (BNSP).</p>
+        </article>
+    </section>
+    
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted" >Shiva May Vazri - 4146153 &copy; FSWD 1</p>
+    </footer>
+</body>
+</html>
