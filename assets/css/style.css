@@ -1,0 +1,51 @@
+body {
+    background-color: babypink;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+  }
+
+h2 {
+    border: 3px solid hotpink;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: pink;
+}
+
+h4, p {
+    text-align: center;
+}
+
+div {
+    height: 400px;
+    width: 23%;
+    background-color: pink;
+    border: 2px solid pink;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-rigth: 5px;
+  }
+
+div img {
+    height: 300px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 5px 5px;
+}
+
+div.flower1 {
+    border-style: solid;
+    border-color: coral;
+}
+
+div.flower2 {
+    border-style: solid;
+    border-color: rgb(249, 19, 147);
+}
