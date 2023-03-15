@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kertas - Gunting - Batu</title>
+</head>
+<body>
+    <script>
+        var komputer = Math.random();
+        var cek = "Default"
+
+        if (komputer > 0.3) {
+            cek = "Kertas";
+        }
+        else if (komputer > 0.6) {
+            cek = "Gunting";
+        }
+        else {
+            cek = "Batu";
+        }
+
+        var Userpilih = prompt("Batu, Gunting, Kertas?");
+        var user = Userpilih;
+
+        if(user === cek){
+            console.log("Seri!");
+            alert("Seri!");
+        }
+        else if(user === "Batu"){
+            if (cek === "Kertas"){
+                console.log("Komputer memilih" + " " + cek + " , " + "Kamu memilih" + " " + user + " " + "Kamu Kalah");
+                alert("Komputer memilih" + " " + cek + " , " + "Kamu memilih" + " " + user + " " + "Kamu Kalah");
+            }
+            else{
+                console.log("Komputer memilih" + " " + user + " , " + "Kamu memilih" + " " + cek + " " + "Kamu Menang");
+                alert("Komputer memilih" + " " + user + " , " + "Kamu memilih" + " " + cek + " " + "Kamu Menang");
+            }
+        }
+        else if(user === "Kertas"){
+            if (cek === "Gunting"){
+                console.log("Komputer memilih" + " " + cek + " , " + "Kamu memilih" + " " + user + " " + "Kamu Kalah");
+                alert("Komputer memilih" + " " + cek + " , " + "Kamu memilih" + " " + user + " " + "Kamu Kalah");
+            }
+            else{
+                console.log("Komputer memilih" + " " + user + " , " + "Kamu memilih" + " " + cek + " " + "Kamu Menang");
+                alert("Komputer memilih" + " " + user + " , " + "Kamu memilih" + " " + cek + " " + "Kamu Menang");
+            }
+        }
+        else if(user === "Gunting"){
+            if (cek === "Batu"){
+                console.log("Komputer memilih" + " " + cek + " , " + "Kamu memilih" + " " + user + " " + "Kamu Kalah");
+                alert("Komputer memilih" + " " + cek + " , " + "Kamu memilih" + " " + user + " " + "Kamu Kalah");
+            }
+            else{
+                console.log("Komputer memilih" + " " + user + " , " + "Kamu memilih" + " " + cek + " " + "Kamu Menang");
+                alert("Komputer memilih" + " " + user + " , " + "Kamu memilih" + " " + cek + " " + "Kamu Menang");
+            }
+        }
+        else {
+            console.log("error");
+            alert("error");
+        }
+    </script>
+</body>
+</html>
