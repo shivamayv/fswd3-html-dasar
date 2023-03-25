@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+}
+
+h2, h3, p, ul, li {
+    color: teal;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0px 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: cadetblue;
+}
+
+ul.topnav li {
+    float: right;
+    margin: 0px 20px;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: teal;
+}
+
+ul.topnav li a.active {
+    background-color: teal;
+}
+
+ul.topnav li.left {
+    float: left;
+}
+
+.main {
+    color: teal;
+    text-align: center;
+}
+
+.body {
+    display: flex;
+    margin: 1em;
+    padding: 1em;
+}
+
+.container {
+    display: flex;
+}
+
+.card {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-content {
+    padding: 0 10px;
+    margin: 0;
+    width: 100%;
+}
+
+.card-tittle, .card-text {
+    color: teal;
+}
+
+.button {
+    background-color: whitesmoke;
+    border: 2px solid cadetblue;
+    color: teal;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.leftbar {
+    color: teal;
+    text-align: left;
+    margin: 1em;
+}
+
+.rightbar {
+    float: left;
+    width: 25%;
+    color: teal;
+    background-color: lightblue;
+    border-radius: 5px;
+    margin: 1em;
+}
+
+@media screen and (max-width: 700px) {
+    ul.topnav li.left, ul.topnav li {
+        float: none;
+    }
+
+    .container {
+        width: 90%;
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        display: block;
+    }
+
+    .card-image {
+        width: 100%;
+    }
+
+    .card-tittle {
+        display: none;
+    }
+
+    .card-content {
+        display: block;
+    }
+
+    .card-text {
+        display: none;
+    }
+
+    .rightbar {
+        width: 100%;
+        padding: 0;
+    }
+}

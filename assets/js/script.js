@@ -31,12 +31,12 @@ function addTask() {
   const list = document.querySelector("ul");
   // return jika task kosong
   if (task.value === "") {
-    alert("Please add some task!");
+    alert("Masukkan kegiatan!");
     return false;
   }
   // periksa apakah task sudah ada
   if (document.querySelector(`input[value="${task.value}"]`)) {
-    alert("Task already exist!");
+    alert("Kegiatan sudah ada!");
     return false;
   }
 
@@ -89,14 +89,14 @@ function editTask(event) {
   let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
   // periksa apakah task kosong
   if (event.value === "") {
-    alert("Task is empty!");
+    alert("Isi Kegiatan!");
     event.value = currentTask;
     return;
   }
   // task sudah ada
   tasks.forEach(task => {
     if (task.task === event.value) {
-      alert("Task already exist!");
+      alert("Kegiatan sudah ada!");
       event.value = currentTask;
       return;
     }
