@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Framework</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="card text-center">
+      <div class="card-header">
+        <nav class="navbar bg-danger">
+          <div class="container">
+            <a class="navbar-brand text-white" href="#">MyBlog</a>
+  
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="card-body">
+        <h5 class="card-title">MyBlog</h5>
+        <p class="card-text">MyBlog adalah blog yang berisi tentang tutorial dan informasi seputar dunia pemrograman.</p>
+      </div>
+    </div>
+    <!-- end Navbar -->
+
+    <!-- Card Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-10">
+          <h5>Artikelku</h5>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="../assets/images/card-image.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Belajar HTML</h5>
+                  <p class="card-text">Belajar HTML adalah hal yang sangat penting untuk menjadi seorang web developer.</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../assets/images/card-image.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Belajar HTML</h5>
+                  <p class="card-text">Belajar HTML adalah hal yang sangat penting untuk menjadi seorang web developer.</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../assets/images/card-image.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Belajar HTML</h5>
+                  <p class="card-text">Belajar HTML adalah hal yang sangat penting untuk menjadi seorang web developer.</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <h5>Artikel Terkait</h5>
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Belajar HTML</li>
+              <li class="list-group-item">Belajar CSS</li>
+              <li class="list-group-item">Belajar Javascript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Card Content -->
+
+    <!-- Bootstrap Javascript -->
+    <script src="../assets/bootstrap/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.js"></script>
+    <!-- end Bootstrap Javascript -->
+</body>
+</html>
